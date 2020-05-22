@@ -1,7 +1,7 @@
 {
   "name": "usfm-js-wrapper",
-  "description": "USFM Scripture to JSON function",
-  "version": "0.0.2",
+  "description": "USFM Scripture to JSON functions",
+  "version": "0.0.3",
   "private": false,
   "homepage": "https://unfoldingword.github.io/usfm-js-wrapper/",
   "repository": {
