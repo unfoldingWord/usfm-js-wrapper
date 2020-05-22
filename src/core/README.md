@@ -7,21 +7,23 @@ These non-component functions can also have playgrounds to test them out.
 ```js
 import {toJSON} from 'usfm-js';
 
-const usfmSourceText  = `\\c 1
+const usfmSourceText  = `\\id GEN short test
+\\mt Genesis
+\\ip Introductory paragraph here.
+\\c 1
 \\p
 \\v 1 Peace on Earth, good will to men.
 \\q
 \\v 2 That's great!`;
 const jsonResult = toJSON(usfmSourceText);
 <>
-Result:<br/>
-{JSON.stringify(jsonResult,null,4)}
+Result:<pre>{JSON.stringify(jsonResult,null,2)}</pre>
 </>
 ```
 
 ### JSON → USFM
 
-What am I doing wrong here???
+TODO: Discover what I'm doing wrong here
 
 ```js
 import {toUSFM} from 'usfm-js';
@@ -62,8 +64,7 @@ import {removeMarker} from 'usfm-js';
 const usfmSourceText  = "\\s1 Peace on Earth, good will to men";
 const jsonResult = removeMarker(usfmSourceText);
 <>
-Result:<br/>
-{JSON.stringify(jsonResult,null,4)}
+Result:<pre>{JSON.stringify(jsonResult,null,2)}</pre>
 </>
 ```
 
@@ -76,8 +77,7 @@ const originalUsfmText  = "Peace on Earth, good will to men";
 const jsonResult = toJSON(originalUsfmText);
 const usfmResult = toUSFM(jsonResult, {forcedNewLines: true});
 <>
-First result:<br/>
-{JSON.stringify(jsonResult,null,4)}
+First result:<pre>{JSON.stringify(jsonResult,null,2)}</pre>
 <br/>then<br/>
 "{usfmResult}"
 <br/>
@@ -87,7 +87,7 @@ Same: {usfmResult == originalUsfmText? 'Yes':'NO'}
 
 ### JSON → USFM → JSON round trip
 
-What am I doing wrong here???
+TODO: Discover what I'm doing wrong here
 
 ```js
 import {toUSFM, toJSON} from 'usfm-js';
@@ -98,9 +98,7 @@ const jsonResult = toJSON(usfmResult);
 <>
 First result:<br/>
 {usfmResult}
-<br/>then<br/>
-{JSON.stringify(jsonResult)}
-<br/>
+<br/>then<pre>{JSON.stringify(jsonResult,null,2)}</pre>
 Same: {jsonResult == originalJsonText? 'Yes' : 'NO'}
 </>
 ```

@@ -1,6 +1,6 @@
 [![Custom badge](https://img.shields.io/endpoint?color=%2374b9ff&url=https%3A%2F%2Fraw.githubusercontent.com%2unfoldingWord%2Fusfm-js-wrapper%2Fmaster%2Fcoverage%2Fshields.json)]()
 
-# USFM-JSON React Component Library
+# USFM-JSON function wrapper
 
 GitHub function: https://github.com/unfoldingWord/usfm-js
 
