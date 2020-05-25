@@ -39,7 +39,13 @@ let sections = [
 				name: 'removeMarker()',
 				content: 'src/core/removeMarker.md',
 				description: 'Javascript removeMarker() function'
-			},
+			}
+		]
+	},
+	{
+		name: 'Round trips',
+		content: 'src/core/Round_trip.md',
+		sections: [
 			{
 				name: 'USFM round trip',
 				content: 'src/core/USFM_round_trip.md',
