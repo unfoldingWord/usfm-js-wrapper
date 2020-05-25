@@ -22,8 +22,35 @@ let sections = [
 	// 	}
 	// },
 	{
-		name: 'Core',
+		name: 'Core functions',
 		content: 'src/core/README.md',
+		sections: [
+			{
+				name: 'toJSON()',
+				content: 'src/core/toJSON.md',
+				description: 'Javascript toJSON() function'
+			},
+			{
+				name: 'toUSFM()',
+				content: 'src/core/toUSFM.md',
+				description: 'Javascript toUSFM() function'
+			},
+			{
+				name: 'removeMarker()',
+				content: 'src/core/removeMarker.md',
+				description: 'Javascript removeMarker() function'
+			},
+			{
+				name: 'USFM round trip',
+				content: 'src/core/USFM_round_trip.md',
+				description: 'Uses toJSON() then toUSFM() and compares with the original'
+			},
+			{
+				name: 'JSON round trip',
+				content: 'src/core/JSON_round_trip.md',
+				description: 'Uses toUSFM() then toJSON() and compares with the original'
+			}
+		]
 	}
 ];
 
